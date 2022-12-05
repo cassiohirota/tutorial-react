@@ -1,0 +1,13 @@
+import Frase from "./Frase"
+import React from 'react';
+
+function HelloWorld(){
+
+    return (
+        <div>
+            <h1>Meu primeiro componente</h1>
+        </div>
+    )
+}
+
+export default HelloWorld
