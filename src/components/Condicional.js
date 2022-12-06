@@ -13,6 +13,10 @@ function Condicional(){
         console.log(userEmail);
     }
 
+    function limparEmail(){
+        setUserEmail("");
+    }
+
     return (
         <div>
             <h2>Cadastre o seu e-mail:</h2>
@@ -22,6 +26,7 @@ function Condicional(){
                 {userEmail &&(
                     <div>
                         <p>O email do usuario: {userEmail}</p>
+                        <button onClick={limparEmail}>Limpar email</button>
                     </div>
                 )}    
             </form>
