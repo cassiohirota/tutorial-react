@@ -1,22 +1,18 @@
 import './App.css';
 import React from 'react';
-import HelloWorld from './components/HelloWorld'
-import SayMyName from './components/SayMyName';
-import Pessoa from './components/Pessoa';
-import Frase from './components/Frase';
-import List from './components/List'
-import Evento from './components/Evento';
-import Form from './components/Form';
-import Condicional from './components/Condicional';
-
+import OutraLista from './components/OutraLista';
+import HelloWorld from "./components/HelloWorld";
+import Form from "./components/Form";
 function App() {
 
-  const nome = "maria";
+  const meuItens = ["React", "Vue", "Angular"];
   
   return (
     <div className="App">
-      <h1>Renderização Condicional</h1>
-      <Condicional />
+      <h1>Renderização de Listas</h1>
+      <OutraLista itens={meuItens} />
+      
+      <OutraLista itens={[]}/>
     </div>
   );
 }
